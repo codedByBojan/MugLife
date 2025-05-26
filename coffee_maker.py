@@ -12,3 +12,11 @@ class CoffeeMaker:
         print(f"Water: {self.resources['water']}ml")
         print(f"Milk: {self.resources['milk']}ml")
         print(f"Coffee: {self.resources['coffee']}g")
+
+    def resources_available(self, drink):
+        """Checking the ingredients for making coffee"""
+        for item in drink.ingredients:
+            if drink.ingredients[item] > self.resources.get(item, 0):
+                print(f"Sorry there is not enough {item}.")
+                return False
+            return True
