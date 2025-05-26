@@ -20,3 +20,11 @@ class CoffeeMaker:
                 print(f"Sorry there is not enough {item}.")
                 return False
             return True
+        
+    def make_coffee(self, order):
+        """Updates the resource levels after preparing a drink."""
+        for item in order.ingredients:
+            self.resources[item] -= order.ingredients[item]
+        print(f"Coffee magic! ✨ Here is your {order.name} ☕️")
+        
+    
