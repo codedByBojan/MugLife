@@ -26,5 +26,15 @@ class Menu:
             available += f"{item.name}/"
         return available
     
-    
+    def find_drink(self, order_name):
+        """Checks the menu for a drink matching the given name. 
+        Returns the drink object if available, or None if not found."""
+        for item in self.meni:
+            if item.name == order_name:
+                return item
+            else:
+                print("Oops! That items not on the menu right now.")
+
+
+
 
