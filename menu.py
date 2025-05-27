@@ -1,6 +1,6 @@
 class MenuItem:
     """Models each Menu item."""
-    def __init__(self, name, cost, ingredients):
+    def __init__(self, name, water, milk, coffee, cost):
         """Initialize name, cost and ingredients for coffee"""
         self.name = name
         self.cost = cost
@@ -30,7 +30,7 @@ class Menu:
     def find_drink(self, order_name):
         """Checks the menu for a drink matching the given name. 
         Returns the drink object if available, or None if not found."""
-        for item in self.meni:
+        for item in self.menu:
             if item.name == order_name:
                 return item
             else:
