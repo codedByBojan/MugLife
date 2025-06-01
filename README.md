@@ -20,5 +20,5 @@ Requirements:
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/muglife-coffee-machine.git
-cd muglife-coffee-machine
+git clone https:https://github.com/codedByBojan/MugLife.git
+cd MugLife
