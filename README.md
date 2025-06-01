@@ -18,7 +18,3 @@ Requirements:
 - **Patterns**: Object-Oriented Programming (OOP)
 - **Data Persistence**: JSON/TXT file storage (optional)
 
-### Installation
-```bash
-git clone https:https://github.com/codedByBojan/MugLife.git
-cd MugLife
